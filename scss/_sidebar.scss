@@ -1,0 +1,31 @@
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $color-border-gray;
+  background: rgb(37, 37, 37);
+  &__link {
+    overflow-x: hidden;
+    color: $color-text-white;
+    font-size: 1.1rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted $color-border-gray;
+    svg {
+      margin-right: 10px;
+    }
+    svg,
+    span {
+      @include transitionEase(all);
+    }
+    &:hover {
+      background: $color-blue-dimmed;
+      @include transitionEase(all);
+      svg,
+      span {
+        transform: translateX(10px);
+      }
+    }
+  }
+}

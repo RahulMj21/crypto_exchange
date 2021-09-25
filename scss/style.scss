@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+@import "./vriables";
+@import "./mixins";
+@import "./header";
+@import "./sidebar";
+@import "./footer";
+@import "./home";
+@import "./cryptocurrencies";
+@import "./exchanges";
+@import "./news";
+@import "./singleCoin";
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background: $color-dark-bg;
+  color: $color-text-white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+button,
+input,
+table {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+button,
+input {
+  outline: none;
+}
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+}
+.link {
+  text-decoration: none;
+}
+.btn {
+  padding: 8px 25px;
+  background-color: $color-blue;
+  border: none;
+  border-radius: 4px;
+  color: $color-text-white;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #4283ec;
+    @include transitionEase(background-color);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+.main {
+  height: calc(100vh - 90px);
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.section {
+  padding: 2rem 1rem;
+  width: 1100px;
+  max-width: 90%;
+  margin: auto;
+  height: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.heading {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding-bottom: 2rem;
+}
+.heading__with__show {
+  @include flex(center, space-between);
+  margin-bottom: 1rem;
+  .btn {
+    padding: 12px 25px;
+    margin-bottom: 20px;
+  }
+}
+.inputBox {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  @include card;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin: 0 auto 2rem;
+  color: gray;
+  cursor: text;
+  &:hover {
+    transform: translate(0, 0);
+  }
+  svg {
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+
+  input {
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+}

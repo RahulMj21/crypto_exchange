@@ -1,0 +1,24 @@
+.home {
+  .stats__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    .stats__item {
+      p {
+        font-size: 1.1rem;
+        color: rgb(173, 173, 173);
+        letter-spacing: 0.5px;
+        padding-bottom: 7px;
+      }
+    }
+  }
+  &__coins {
+    .heading {
+      padding-bottom: 0;
+    }
+  }
+  &__news {
+    padding-top: 4rem;
+  }
+}

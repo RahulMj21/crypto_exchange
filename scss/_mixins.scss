@@ -1,0 +1,28 @@
+@mixin transitionEase($property) {
+  transition: $property 0.4s ease;
+}
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin card {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.02)
+  );
+  padding: 1rem 0;
+  border-radius: 7px;
+  border-top: 1px solid $color-border-gray;
+  border-left: 1px solid $color-border-gray;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+@mixin gridCol2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  justify-items: center;
+}

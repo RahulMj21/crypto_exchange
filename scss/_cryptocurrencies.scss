@@ -1,0 +1,32 @@
+.cryptocurrencies__coins {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+
+  .coindata {
+    @include card;
+    @include transitionEase(all);
+    height: 100%;
+
+    &__heading {
+      padding: 0 1rem 1rem;
+      color: $color-text-white;
+      border-bottom: 1px solid $color-border-gray;
+      @include flex(center, space-between);
+      h3 {
+        letter-spacing: 1px;
+      }
+      img {
+        width: 30px;
+      }
+    }
+    &__body {
+      padding: 1rem 1rem 0;
+      color: gray;
+      p:not(last-child) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.singleCoin {
+  &__head {
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $color-border-gray;
+    .heading {
+      padding-bottom: 1rem;
+    }
+  }
+  &__icon {
+    width: 100px;
+  }
+  &__text {
+    color: gray;
+    letter-spacing: 0.4px;
+  }
+  &__stats {
+    @include gridCol2;
+    margin-bottom: 2rem;
+    &__header {
+      margin-bottom: 2rem;
+      h2 {
+        padding-bottom: 0.5rem;
+      }
+    }
+    &__body {
+      width: 400px;
+      max-width: 90%;
+      .item {
+        @include flex(center, space-between);
+        letter-spacing: 0.4px;
+        margin-bottom: 1.3rem;
+        padding-bottom: 1.3rem;
+        border-bottom: 1px solid $color-border-gray;
+        color: $color-text-gray;
+        .key {
+          display: flex;
+          align-items: center;
+          svg {
+            margin-right: 10px;
+          }
+        }
+        .value {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+  &__more {
+    @include gridCol2;
+    margin-bottom: 2rem;
+  }
+  &__description {
+    p {
+      color: $color-text-gray;
+      line-height: 1.6;
+      padding-bottom: 2rem;
+      text-align: justify;
+      letter-spacing: 0.4px;
+    }
+    h3 {
+      font-size: 20px;
+      padding-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+    a {
+      color: $color-blue;
+    }
+  }
+  &__links {
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto;
+    .link__item {
+      @include flex(center, space-between);
+      letter-spacing: 0.4px;
+      margin-bottom: 1.3rem;
+      padding-bottom: 1.3rem;
+      border-bottom: 1px solid $color-border-gray;
+      color: $color-text-gray;
+      .link {
+        color: $color-blue;
+      }
+    }
+  }
+}

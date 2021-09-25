@@ -1,0 +1,19 @@
+.header {
+  background: $color-dark-light;
+  height: 90px;
+  padding: 0 50px;
+  border-bottom: 1px solid $color-border-gray;
+  @include flex(center, space-between);
+  &__logo {
+    @include flex(center, space-between);
+  }
+  &__logoImg {
+    width: 40px;
+    margin-right: 0.8rem;
+  }
+  &__logoText {
+    font-size: 25px;
+    color: $color-blue;
+    letter-spacing: 1px;
+  }
+}
