@@ -98,7 +98,7 @@ const singleCoin = () => {
             </div>
             <div className="singleCoin__stats__body">
               {stats.map((stat) => (
-                <div className="item">
+                <div className="item" key={stat.title}>
                   <div className="key">
                     {stat.icon}
                     {stat.title}
@@ -117,7 +117,7 @@ const singleCoin = () => {
             </div>
             <div className="singleCoin__stats__body">
               {genericStats.map((stat) => (
-                <div className="item">
+                <div className="item" key={stat.title}>
                   <div className="key">
                     {stat.icon}
                     {stat.title}

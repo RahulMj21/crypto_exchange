@@ -35,7 +35,7 @@ const Coins = ({ coins }) => {
       <div className="cryptocurrencies__coins">
         {allCoins &&
           allCoins.map((coin) => (
-            <Link href={`/coin/${coin.id}`} key={coin.rank}>
+            <Link href={`/coin/${coin.id}`} key={coin.id}>
               <a className="link">
                 <div className="coindata">
                   <div className="coindata__heading">

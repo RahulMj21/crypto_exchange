@@ -3,6 +3,12 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 3rem;
+  @include media-lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media-sm {
+    grid-template-columns: 1fr;
+  }
 
   .coindata {
     @include card;

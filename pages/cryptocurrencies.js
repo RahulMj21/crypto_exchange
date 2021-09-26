@@ -16,10 +16,10 @@ const Cryptocurrencies = () => {
           <>
             <h1 className="heading">Cryptocurrencies</h1>
             <Coins coins={coins} />
+            <Footer />
           </>
         )
       )}
-      <Footer />
     </section>
   );
 };

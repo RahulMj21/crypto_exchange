@@ -17,6 +17,11 @@
   }
   &__stats {
     @include gridCol2;
+    .left,
+    .right {
+      width: 90%;
+      max-width: 600px;
+    }
     margin-bottom: 2rem;
     &__header {
       margin-bottom: 2rem;
@@ -25,8 +30,6 @@
       }
     }
     &__body {
-      width: 400px;
-      max-width: 90%;
       .item {
         @include flex(center, space-between);
         letter-spacing: 0.4px;
@@ -48,8 +51,8 @@
     }
   }
   &__more {
-    @include gridCol2;
     margin-bottom: 2rem;
+    @include gridCol2;
   }
   &__description {
     p {
@@ -69,8 +72,8 @@
     }
   }
   &__links {
-    width: 400px;
-    max-width: 90%;
+    width: 90%;
+    max-width: 600px;
     margin: 0 auto;
     .link__item {
       @include flex(center, space-between);

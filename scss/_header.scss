@@ -1,3 +1,14 @@
+// @include media-md {
+//   .header {
+//     &__logoImg {
+//       width: 30px;
+//     }
+//     &__logoText {
+//       font-size: 20px;
+//     }
+//   }
+// }
+
 .header {
   background: $color-dark-light;
   height: 90px;
@@ -15,5 +26,19 @@
     font-size: 25px;
     color: $color-blue;
     letter-spacing: 1px;
+    margin-right: 20px;
+  }
+  @include media-md {
+    padding: 0 20px;
+    &__logoImg {
+      width: 30px;
+    }
+    &__logoText {
+      font-size: 10x;
+    }
+    .btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
   }
 }

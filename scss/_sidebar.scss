@@ -4,16 +4,34 @@
   flex-direction: column;
   border-right: 1px solid $color-border-gray;
   background: rgb(37, 37, 37);
+  width: 25%;
+  @include media-lg {
+    width: 15%;
+  }
+  @include media-md {
+    width: 10%;
+  }
   &__link {
     overflow-x: hidden;
     color: $color-text-white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
     border-bottom: 1px dotted $color-border-gray;
+    @include media-md {
+      padding: 1.5rem 0;
+    }
     svg {
       margin-right: 10px;
+      @include media-lg {
+        margin: auto;
+      }
+    }
+    span {
+      @include media-lg {
+        display: none;
+      }
     }
     svg,
     span {
@@ -24,7 +42,9 @@
       @include transitionEase(all);
       svg,
       span {
-        transform: translateX(10px);
+        @include media-lg {
+          transform: translateX(0px);
+        }
       }
     }
   }

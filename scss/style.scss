@@ -48,11 +48,7 @@ button,
 input {
   outline: none;
 }
-.container {
-  width: 1200px;
-  max-width: 90%;
-  margin: auto;
-}
+
 .link {
   text-decoration: none;
 }
@@ -82,8 +78,8 @@ input {
 }
 .section {
   padding: 2rem 1rem;
-  width: 1100px;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1100px;
   margin: auto;
   height: 100%;
   overflow: auto;
